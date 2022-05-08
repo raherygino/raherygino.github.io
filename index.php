@@ -109,9 +109,9 @@
         <div class="topline"></div>
         <div class="container text-center pt-4 hero-title">
           <img class="img-thumbnail img-fluid rounded-circle mb-3 shadow-sm" src="assets/img/team/gino.jpg" alt="" width="200">
-           <h1 class=" my-4 fw-light text-dark"><small class="text-sm">Bonjour, Je m'appele Georgino</small><br> Je suis un <span class="typed-text fw-bold" data-typed-text='[" Développeur Frontend", "Développeur Backend", "Développeur Mobile","Infographiste"]'></span><br /></h1>
+           <h1 class=" my-4 fw-light text-dark"><small class="text-sm">Bonjour, Je m'appele Georgino</small><br> Je suis un <span class="typed-text fw-bold" data-typed-text='[" Développeur Web", "Développeur Mobile","Infographiste"]'></span><br /></h1>
               <p class="lead text-dark opacity-75">
-                Je suis un senior fullstack développeur passioné, et je m'inspire dans tous le front-end.<br>Bienvenu dans mon site web. Je suis trés contant que vous me visitiez.
+                Je suis un Junior fullstack développeur passioné, et je m'inspire dans tous le front-end.<br>Bienvenu dans mon site web. Je suis trés contant que vous me visitiez.
               </p>
               <a class="btn btn-primary rounded-pill mt-2 px-5 py-2 shadow" data-controller="launch-fast" href="">Télécharger Mon CV</a></div>
         <div class="px-0 hero-image-container position-relative">
