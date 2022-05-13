@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
-<?php include "assets/addons/head.php"; ?>
+  <?php include "assets/addons/head.php"; ?>
   <body>
     <main class="main" id="top">
-    <?php include "assets/addons/header.php"; ?>
-      
+      <?php include "assets/addons/header.php"; ?>
       <div class="home-hero overflow-hidden" style="background-image:linear-gradient(45deg, #f6ba73 20%, #e74860 40%, #9e61cb 60%, #084572 90%);">
         <div class="topline"></div>
         <div class="container text-center pt-4 hero-title">
           <img class="img-thumbnail img-fluid rounded-circle mb-3 shadow-sm" src="assets/img/team/gino.jpg" alt="" width="200">
-           <h1 class=" my-4 fw-light text-dark"><small class="text-sm">Bonjour, Je m'appele Georgino</small><br> Je suis un <span class="typed-text fw-bold" data-typed-text='[" Développeur Web", "Développeur Mobile","Infographiste"]'></span><br /></h1>
-              <p class="lead text-dark opacity-75">
-                Je suis un Junior fullstack développeur passioné, et je m'inspire dans tous le front-end.<br>Bienvenu dans mon site web. Je suis trés contant que vous me visitiez.
-              </p>
-              <a class="btn btn-primary rounded-pill mt-2 px-5 py-2 shadow" data-controller="launch-fast" href="">Télécharger Mon CV</a></div>
-        <div class="px-0 hero-image-container position-relative">
-          <div>
-            <picture height="320" width="1892">
-              <source srcset="assets/img/illustrations/home-bg-00132170af0ff46f9e4b006e4c911bedf8f94ad28bb43c20e00433f6a5227556.webp" type="image/webp">
+          <h1 class=" my-4 fw-light text-dark"><small class="text-sm">Bonjour, Je m'appele Georgino</small><br> Je suis un <span class="typed-text fw-bold" data-typed-text='[" Développeur Web", "Développeur Mobile","Infographiste"]'></span><br /></h1>
+          <p class="lead text-dark opacity-75">
+            Je suis un Junior fullstack développeur passioné, et je m'inspire dans tous le front-end.<br>Bienvenu dans mon site web. Je suis trés contant que vous me visitiez.
+          </p>
+          <a class="btn btn-primary rounded-pill mt-2 px-5 py-2 shadow" data-controller="launch-fast" href="">Télécharger Mon CV</a></div>
+          <div class="px-0 hero-image-container position-relative">
+            <div>
+              <picture height="320" width="1892">
+                <source srcset="assets/img/illustrations/home-bg-00132170af0ff46f9e4b006e4c911bedf8f94ad28bb43c20e00433f6a5227556.webp" type="image/webp">
                 <img height="320" src="assets/img/illustrations/home-bg-00132170af0ff46f9e4b006e4c911bedf8f94ad28bb43c20e00433f6a5227556.webp" type="image/jpg" width="1892">
               </picture>
               <?php include 'assets/addons/svg.php'; ?>
             </div>
           </div>
         </div>
-      <section>
-        <div class="container">
-          <div class="row justify-content-center text-center">
-            <div class="col-lg-8 col-xl-7 col-xxl-6">
-              <h1 class="fs-2 fs-sm-4 fs-md-5">Services</h1>
-              <p class="lead">Je vous propose des services basant sur la technologie de l’informatique.</p>
+        <section>
+          <div class="container">
+            <div class="row justify-content-center text-center">
+              <div class="col-lg-8 col-xl-7 col-xxl-6">
+                <h1 class="fs-2 fs-sm-4 fs-md-5">Services</h1>
+                <p class="lead">Je vous propose des services basant sur la technologie de l’informatique.</p>
+              </div>
             </div>
-          </div>
-          <div class="row flex-center">
-            <div class="col-md col-lg-5 col-xl-4 ps-lg-6"><img class="img-fluid px-6 px-md-0" src="assets/img/icons/spot-illustrations/50.png" alt="" /></div>
-            <div class="col-md col-lg-5 col-xl-4 mt-4 mt-md-0">
-              <h5 class="text-danger"><span class="far fa-lightbulb me-2"></span>Graphic Design</h5>
-              <h3>Modelisation de maquette graphique</h3>
-              <p>Confiez vos infographies à des experts. Tous vos flyers, catalogues, cartes de visite, vidéos publicitaires, ... à des experts</p>
+            <div class="row flex-center">
+              <div class="col-md col-lg-5 col-xl-4 ps-lg-6">
+                <img class="img-fluid px-6 px-md-0" src="assets/img/icons/spot-illustrations/50.png" alt="" />
+              </div>
+              <div class="col-md col-lg-5 col-xl-4 mt-4 mt-md-0">
+                <h5 class="text-danger"><span class="far fa-lightbulb me-2"></span>Graphic Design</h5>
+                <h3>Modelisation de maquette graphique</h3>
+                <p>Confiez vos infographies à des experts. Tous vos flyers, catalogues, cartes de visite, vidéos publicitaires, ... à des experts</p>
+              </div>
             </div>
-          </div>
-          <div class="row flex-center">
-            <div class="col-md col-lg-5 col-xl-4 pe-lg-6 order-md-2"><img class="img-fluid px-6 px-md-0" src="assets/img/icons/spot-illustrations/49.png" alt="" /></div>
-            <div class="col-md col-lg-5 col-xl-4 mt-4 mt-md-0">
-              <h5 class="text-info"> <span class="far fa-object-ungroup me-2"></span>Création</h5>
-              <h3>Création de votre site web</h3>
-              <p>Dans les conditions et le design que vous préférez, Gino peut concevoir votre site web de A à Z que ce soit E-commerce, Site vitrine, Blog,...</p>
+            <div class="row flex-center">
+              <div class="col-md col-lg-5 col-xl-4 pe-lg-6 order-md-2">
+                <img class="img-fluid px-6 px-md-0" src="assets/img/icons/spot-illustrations/49.png" alt="" />
+              </div>
+              <div class="col-md col-lg-5 col-xl-4 mt-4 mt-md-0">
+                <h5 class="text-info"> <span class="far fa-object-ungroup me-2"></span>Création</h5>
+                <h3>Création de votre site web</h3>
+                <p>Dans les conditions et le design que vous préférez, Gino peut concevoir votre site web de A à Z que ce soit E-commerce, Site vitrine, Blog,...</p>
+              </div>
             </div>
-          </div>
-          <div class="row flex-center">
-            <div class="col-md col-lg-5 col-xl-4 ps-lg-6"><img class="img-fluid px-6 px-md-0" src="assets/img/icons/spot-illustrations/48.png" alt="" /></div>
-            <div class="col-md col-lg-5 col-xl-4 mt-4 mt-md-0">
-              <h5 class="text-success"><span class="far fa-paper-plane me-2"></span>Développement</h5>
-              <h3>Développement d'application web</h3>
-              <p>Je peut développer votre progressive web application dans les meilleures conditions.</p>
-            </div>
+            <div class="row flex-center">
+              <div class="col-md col-lg-5 col-xl-4 ps-lg-6"><img class="img-fluid px-6 px-md-0" src="assets/img/icons/spot-illustrations/48.png" alt="" /></div>
+                <div class="col-md col-lg-5 col-xl-4 mt-4 mt-md-0">
+                  <h5 class="text-success"><span class="far fa-paper-plane me-2"></span>Développement</h5>
+                  <h3>Développement d'application web</h3>
+                  <p>Je peut développer votre progressive web application dans les meilleures conditions.</p>
+                </div>
           </div>
           <div class="row flex-center">
             <div class="col-md col-lg-5 col-xl-4 pe-lg-6 order-md-2"><img class="img-fluid px-6 px-md-0" src="assets/img/icons/spot-illustrations/15.png" alt="" /></div>
