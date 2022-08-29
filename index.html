@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Georginot</title>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-gino-2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-gino-2.png">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicons/favicon-gino-2.png">
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
@@ -23,6 +23,17 @@
     <link href="assets/css/user-rtl.min.css" rel="stylesheet" id="user-style-rtl">
     <link href="assets/css/user.min.css" rel="stylesheet" id="user-style-default">
     <link href="assets/css/main.min.css" rel="stylesheet">
+    <style type="text/css">
+      
+      .bg-blur{
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(13.7px);
+        -webkit-backdrop-filter: blur(13.7px);
+        border: 1px solid rgba(255, 255, 255, 0.83);
+      }
+    </style>
     <script>
       var isRTL = JSON.parse(localStorage.getItem('isRTL'));
       if (isRTL) {
@@ -48,74 +59,73 @@
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarStandard" aria-controls="navbarStandard" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse scrollbar" id="navbarStandard">
             <ul class="navbar-nav" data-top-nav-dropdowns="data-top-nav-dropdowns">
-              <li class="nav-item"><a class="nav-link active" href="./" role="button" id="home">Accueil</a>
+              <li class="nav-item"><a class="nav-link active" href="./" role="button">Accueil</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="./" role="button" id="about">A propos</a>
+              <li class="nav-item"><a class="nav-link" href="#services" role="button">Services</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="./" role="button" id="blog">Blog</a>
+              <li class="nav-item"><a class="nav-link" href="#experience" role="button">Experience</a>
               </li>
             </ul>
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="./">
-                  <span class="d-none d-lg-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Télécharger mon CV"><span class="far fa-file-alt"></span></span><span class="d-lg-none">Dashboard</span>
+                  <span class="d-none d-lg-inline-block" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Télécharger mon CV">
+                    <span class="fas fa-file-download"></span> CV
+                  </span>
+                  <span class="d-lg-none">Dashboard</span>
                 </a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal">S'inscrire</a></li>
+              <li class="nav-item"><a class="nav-link" href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a></li>
             </ul>
           </div>
         </div>
       </nav>
+
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-body p-4">
               <div class="row text-start justify-content-between align-items-center mb-2">
                 <div class="col-auto">
-                  <h5 id="modalLabel">Register</h5>
-                </div>
-                <div class="col-auto">
-                  <p class="fs--1 text-600 mb-0">Have an account? <a href="authentication/simple/login.html">Login</a></p>
+                  <h5 id="modalLabel">Contact</h5>
+                  <p>Veuillez completer le formulaire ci-dessous</p>
                 </div>
               </div>
               <form>
-                <div class="mb-3"><input class="form-control" type="text" autocomplete="on" placeholder="Name" /></div>
-                <div class="mb-3"><input class="form-control" type="email" autocomplete="on" placeholder="Email address" /></div>
-                <div class="row gx-2">
-                  <div class="mb-3 col-sm-6"><input class="form-control" type="password" autocomplete="on" placeholder="Password" /></div>
-                  <div class="mb-3 col-sm-6"><input class="form-control" type="password" autocomplete="on" placeholder="Confirm Password" /></div>
+                <div class="mb-3">
+                  <input class="form-control" type="text" autocomplete="off" placeholder="Nom et prénom" />
                 </div>
-                <div class="form-check"><input class="form-check-input" type="checkbox" id="modal-register-checkbox" /><label class="form-label" for="modal-register-checkbox">I accept the <a href="#!">terms </a>and <a href="#!">privacy policy</a></label></div>
-                <div class="mb-3"><button class="btn btn-primary d-block w-100 mt-3" type="submit" name="submit">Register</button></div>
+                <div class="mb-3">
+                  <input class="form-control" type="email" autocomplete="on" placeholder="Email" />
+                </div>
+                <div class="mb-3">
+                  <input class="form-control" type="text" autocomplete="on" placeholder="Objet" />
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" placeholder="Message" rows="3"></textarea>
+                </div>
+                <div class="mb-3"><button class="btn btn-primary d-block w-100 mt-3" type="submit" name="submit">Envoyer</button></div>
               </form>
-              <div class="position-relative mt-4">
-                <hr class="bg-300" />
-                <div class="divider-content-center">or register with</div>
-              </div>
-              <div class="row g-2 mt-2">
-                <div class="col-sm-6"><a class="btn btn-outline-google-plus btn-sm d-block w-100" href="#"><span class="fab fa-google-plus-g me-2" data-fa-transform="grow-8"></span> google</a></div>
-                <div class="col-sm-6"><a class="btn btn-outline-facebook btn-sm d-block w-100" href="#"><span class="fab fa-facebook-square me-2" data-fa-transform="grow-8"></span> facebook</a></div>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="home-hero overflow-hidden" style="background-image:url('assets/img/hero-background.jpg'); background-size: 100% 100%; ">
+      <div class="home-hero overflow-hidden" style="background-image:url('assets/img/hero-back.jpg'); background-size: 100% 100%; ">
         <div class="topline"></div>
-      <section style="background: linear-gradient(90deg, #3aa4ffcc 0%, #6dff54cc 100%);">
+      <section style="background: linear-gradient(90deg, #00000044 0%, #00000044 100%);">
 
-        <div class="container text-center pt-4 hero-title">
+        <div class="container text-center pt-4 hero-title bg-blur">
           <img class="img-thumbnail img-fluid rounded-circle mb-3 shadow-sm" src="assets/img/team/gino.jpg" alt="" width="200">
-          <h1 class=" my-4 fw-light text-dark"><small class="text-sm">Bonjour, Je m'appele Georgino</small><br> Je suis un <span class="typed-text fw-bold" data-typed-text='[" Développeur Web", "Développeur Mobile","Infographiste"]'></span><br /></h1>
+          <h1 class=" my-4 fw-light text-dark"><small class="text-sm">Bonjour, Je m'appele Georgino</small><br> Je suis un Développeur <span class="typed-text fw-bold" data-typed-text='[" Web", " Mobile"]'></span><br /></h1>
           <p class="lead text-dark opacity-75">
             Je suis un Junior fullstack développeur passioné, et je m'inspire dans tous le front-end.<br>Bienvenu dans mon site web. Je suis trés contant que vous me visitiez.
           </p>
-          <a class="btn btn-primary rounded-pill mt-2 px-5 py-2 shadow" data-controller="launch-fast" href="">Télécharger Mon CV</a></div>
+          <a class="btn btn-primary rounded-pill mt-2 mb-3 px-5 py-2 shadow" data-controller="launch-fast" href="">Télécharger Mon CV</a></div>
 
       </section>
         </div>
         
-        <section>
+        <section id="services">
           <div class="container">
             <div class="row justify-content-center text-center">
               <div class="col-lg-8 col-xl-7 col-xxl-6">
@@ -165,46 +175,306 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="bg-light text-center">
+      <section class="bg-light" id="experience">
         <div class="container">
-          <div class="row">
+          <div class="row text-center ">
             <div class="col">
-              <h1 class="fs-2 fs-sm-4 fs-md-5">Portfolio</h1>
+              <h1 class="fs-2 fs-sm-4 fs-md-5">Experience</h1>
               <p class="lead"></p>
             </div>
           </div>
-          <div class="row mt-6">
-            <div class="col-lg-4">
-              <div class="card card-span h-100">
-                <div class="card-span-img"><span class="fab fa-sass fs-4 text-info"></span></div>
-                <div class="card-body pt-6 pb-4">
-                  <h5 class="mb-2">Bootstrap 5.x</h5>
-                  <p>Build your webapp with the world's most popular front-end component library along with Falcon's 32 sets of carefully designed elements.</p>
+
+            <div class="card-body fs--1">
+              <h4 class="text-800 text-center">2022</h4>
+              <div class="row">
+                <div class="col-md-6 h-100">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar me-2">
+                      <span class="calendar-month">Juin</span>
+                      <span class="calendar-day">01</span>
+                    </div>
+                    <div class="calendar">
+                      <span class="calendar-month">Juil</span>
+                      <span class="calendar-day">31</span>
+                    </div>
+                    <div class="flex-1 position-relative ps-3">
+                      <h6 class="fs-0 mb-0"><a href="event-detail.html">Zebutech <span class="badge badge-soft-success rounded-pill">Récent</span></a></h6>
+                      <p class="mb-0">Développeur Mobile <a href="#!" class="text-700">Kotlin</a></p>
+                      <p class="text-1000 mb-1">
+                      Missions: Ajout des noveaux mise à jour de l'application OnRushers</p>
+                      <p class="text-1000 mb-0">Temps: 2 mois</p>
+                      <p class="text-1000 mb-0">Duration: Début Juin - Fin Juillet</p>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 h-100">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar me-2">
+                      <span class="calendar-month">Juillet</span>
+                      <span class="calendar-day">01</span>
+                    </div>
+                    <div class="flex-1 position-relative ps-3">
+                      <h6 class="fs-0 mb-0"><a href="http://chay.fr" target="_blank">Chay.fr</a></h6>
+                      <p class="mb-0">Développeur Web <a href="#!" class="text-700">PHP & MySQL</a></p>
+                      <p class="text-1000 mb-1">
+                      Missions: Réfonte du site web chay.fr</p>
+                      <p class="text-1000 mb-0">Temps: 1 mois</p>
+                      <p class="text-1000 mb-0">Duration: Juillet</p>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 h-100">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar me-2">
+                      <span class="calendar-month">Avril</span>
+                      <span class="calendar-day">01</span>
+                    </div>
+                    <div class="flex-1 position-relative ps-3">
+                      <h6 class="fs-0 mb-0"><a href="https://liberezmonpeuple.fr" target="_blank">Liberez mon peuple</a></h6>
+                      <p class="mb-0">Développeur Web <a href="#!" class="text-700">PHP & MySQL</a></p>
+                      <p class="text-1000 mb-1">
+                      Missions: Création du site web liberezmonpeuple.fr</p>
+                      <p class="text-1000 mb-0">Temps: 1 mois</p>
+                      <p class="text-1000 mb-0">Duration: Avril</p>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 h-100">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar me-2">
+                      <span class="calendar-month">Févr</span>
+                      <span class="calendar-day">01</span>
+                    </div>
+                    <div class="flex-1 position-relative ps-3">
+                      <h6 class="fs-0 mb-0"><a href="https://maintenance-machinerie-scenique.fr" target="_blank">Maintenance Machinerie Scénique</a></h6>
+                      <p class="mb-0">Développeur Web <a href="#!" class="text-700">PHP & MySQL</a></p>
+                      <p class="text-1000 mb-1">
+                      Missions: Réfonte du site web maintenance-machinerie-scenique.fr</p>
+                      <p class="text-1000 mb-0">Temps: 1 mois</p>
+                      <p class="text-1000 mb-0">Duration: Juillet</p>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4 class="text-800 text-center">2021</h4>
+              <div class="row">
+                <div class="col-md-6 h-100">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar me-2">
+                      <span class="calendar-month">Déc</span>
+                      <span class="calendar-day">24</span>
+                    </div>
+                    <div class="calendar">
+                      <span class="calendar-month">Mai</span>
+                      <span class="calendar-day">31</span>
+                    </div>
+                    <div class="flex-1 position-relative ps-3">
+                      <h6 class="fs-0 mb-0"><a href="#">Tike</a></h6>
+                      <p class="mb-0">Développeur Mobile <a href="#!" class="text-700">Java</a></p>
+                      <p class="text-1000 mb-1">
+                      Missions: Conception d'application crowndfounding Tike</p>
+                      <p class="text-1000 mb-0">Temps: 5 mois</p>
+                      <p class="text-1000 mb-0">Duration: Début 24 Déc - Fin Mai</p>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 h-100">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar me-2">
+                      <span class="calendar-month">Déc</span>
+                      <span class="calendar-day">01</span>
+                    </div>
+                    <div class="flex-1 position-relative ps-3">
+                      <h6 class="fs-0 mb-0"><a href="http://chay.fr" target="_blank">Chay.fr</a></h6>
+                      <p class="mb-0">Développeur Mobile <a href="#" class="text-700">Java</a></p>
+                      <p class="text-1000 mb-1">
+                      Missions: Refonte d’une Application Mobile d’enseignement <br>[Design UX et UI]</p>
+                      <p class="text-1000 mb-0">Temps: 1 mois</p>
+                      <p class="text-1000 mb-0">Duration: Décembre</p>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 h-100">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar me-2">
+                      <span class="calendar-month">Avril</span>
+                      <span class="calendar-day">20</span>
+                    </div>
+                    <div class="calendar">
+                      <span class="calendar-month">Nov</span>
+                      <span class="calendar-day">30</span>
+                    </div>
+                    <div class="flex-1 position-relative ps-3">
+                      <h6 class="fs-0 mb-0"><a href="#">Application Mobile de géolocalisation</a></h6>
+                      <p class="mb-0">Développeur Mobile <a href="#!" class="text-700">Java</a></p>
+                      <p class="text-1000 mb-1">
+                      Missions: Conception d'application mobile d'automobile géolocalisation</p>
+                      <p class="text-1000 mb-0">Temps: 7 mois</p>
+                      <p class="text-1000 mb-0">Duration: Avril - Novembre</p>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 h-100">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar me-2">
+                      <span class="calendar-month">Juin</span>
+                      <span class="calendar-day">01</span>
+                    </div>
+                    <div class="calendar">
+                      <span class="calendar-month">Sept</span>
+                      <span class="calendar-day">30</span>
+                    </div>
+                    <div class="flex-1 position-relative ps-3">
+                      <h6 class="fs-0 mb-0"><a href="#">Kapsul</a></h6>
+                      <p class="mb-0">Développeur Mobile <a href="#!" class="text-700">Java</a></p>
+                      <p class="text-1000 mb-1">
+                      Missions: Création d’une Application de Taxi [Design UI & Fonctionalité]</p>
+                      <p class="text-1000 mb-0">Temps: 4 mois</p>
+                      <p class="text-1000 mb-0">Duration: 1 Juin - 30 Septembre</p>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 h-100">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar">
+                      <span class="calendar-month">Juin</span>
+                      <span class="calendar-day">01</span>
+                    </div>
+                    <div class="flex-1 position-relative ps-3">
+                      <h6 class="fs-0 mb-0"><a href="https://madagascar-green-tours" target="_blank">Madagascar Green Tours</a></h6>
+                      <p class="mb-0">Web Designer <a href="#" class="text-700">Bootstrap</a></p>
+                      <p class="text-1000 mb-1">
+                      Missions: Réfonte du site de Madagascar Green Tours</p>
+                      <p class="text-1000 mb-0">Temps: 1 mois</p>
+                      <p class="text-1000 mb-0">Duration: Juin</p>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 h-100">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar me-2">
+                      <span class="calendar-month">Juin</span>
+                      <span class="calendar-day">01</span>
+                    </div>
+                    <div class="flex-1 position-relative ps-3">
+                      <h6 class="fs-0 mb-0"><a href="#">Bricotech</a></h6>
+                      <p class="mb-0">Développeur Web <a href="#!" class="text-700">PHP & MySQL</a></p>
+                      <p class="text-1000 mb-1">
+                      Missions: Ajout des nouveaux fonctionalités d'une application de facturation</p>
+                      <p class="text-1000 mb-0">Temps: 1 mois</p>
+                      <p class="text-1000 mb-0">Duration: Juin</p>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 h-100">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar me-2">
+                      <span class="calendar-month">Avril</span>
+                      <span class="calendar-day">01</span>
+                    </div>
+                    <div class="flex-1 position-relative ps-3">
+                      <h6 class="fs-0 mb-0"><a href="#">Bricotech</a></h6>
+                      <p class="mb-0">Développeur Web <a href="#!" class="text-700">PHP & MySQL</a></p>
+                      <p class="text-1000 mb-1">
+                      Missions: Ajout des nouveaux fonctionalités d'une application de devis & facturation</p>
+                      <p class="text-1000 mb-0">Temps: 1 mois</p>
+                      <p class="text-1000 mb-0">Duration: Avril</p>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 h-100">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar me-2">
+                      <span class="calendar-month">Jan</span>
+                      <span class="calendar-day">01</span>
+                    </div>
+                    <div class="flex-1 position-relative ps-3">
+                      <h6 class="fs-0 mb-0"><a href="#">Bricotech</a></h6>
+                      <p class="mb-0">Développeur Web <a href="#!" class="text-700">PHP & MySQL</a></p>
+                      <p class="text-1000 mb-1">
+                      Missions: Création d'une application de devis & facturation</p>
+                      <p class="text-1000 mb-0">Temps: 1 mois</p>
+                      <p class="text-1000 mb-0">Duration: Janvier</p>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 h-100">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar me-2">
+                      <span class="calendar-month">Jan</span>
+                      <span class="calendar-day">01</span>
+                    </div>
+                    <div class="flex-1 position-relative ps-3">
+                      <h6 class="fs-0 mb-0"><a href="#">Chay.fr</a></h6>
+                      <p class="mb-0">Développeur Web <a href="#!" class="text-700">PHP & MySQL</a></p>
+                      <p class="text-1000 mb-1">
+                      Missions: Réfonte du site chay.fr</p>
+                      <p class="text-1000 mb-0">Temps: 1 mois</p>
+                      <p class="text-1000 mb-0">Duration: Janvier</p>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="text-800 text-center">2018</h4>
+              <div class="row">
+                <div class="col-md-6 h-100">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar me-2">
+                      <span class="calendar-month">Sept</span>
+                      <span class="calendar-day">01</span>
+                    </div>
+                    <div class="calendar">
+                      <span class="calendar-month">Nov</span>
+                      <span class="calendar-day">30</span>
+                    </div>
+                    <div class="flex-1 position-relative ps-3">
+                      <h6 class="fs-0 mb-0"><a href="#">IEES Madagascar</a></h6>
+                      <p class="mb-0">Stagiaire Développeur Web <a href="#!" class="text-700">PHP & MySQL</a></p>
+                      <p class="text-1000 mb-1">
+                      Missions: Création d'une application de transaction</p>
+                      <p class="text-1000 mb-0">Temps: 2 mois</p>
+                      <p class="text-1000 mb-0">Duration: Septembre - Novembre</p>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 h-100">
+                  <div class="d-flex btn-reveal-trigger">
+                    <div class="calendar me-2">
+                      <span class="calendar-month">Jan</span>
+                      <span class="calendar-day">01</span>
+                    </div>
+                    <div class="flex-1 position-relative ps-3">
+                      <h6 class="fs-0 mb-0"><a href="#">Maintenance Machinerie Scenique</a></h6>
+                      <p class="mb-0">Développeur Web <a href="#!" class="text-700">PHP & MySQL</a></p>
+                      <p class="text-1000 mb-1">
+                      Missions: Création du site Maintenance Machinerie Scenique</p>
+                      <p class="text-1000 mb-0">Temps: 1 mois</p>
+                      <p class="text-1000 mb-0">Duration: Janvier</p>
+                      <div class="border-dashed-bottom my-3"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 mt-6 mt-lg-0">
-              <div class="card card-span h-100">
-                <div class="card-span-img"><span class="fab fa-node-js fs-5 text-success"></span></div>
-                <div class="card-body pt-6 pb-4">
-                  <h5 class="mb-2">SCSS &amp; Javascript files</h5>
-                  <p>With your purchased copy of Falcon, you will get all the uncompressed & documented SCSS and Javascript source code files.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 mt-6 mt-lg-0">
-              <div class="card card-span h-100">
-                <div class="card-span-img"><span class="fab fa-gulp fs-6 text-danger"></span></div>
-                <div class="card-body pt-6 pb-4">
-                  <h5 class="mb-2">Gulp based workflow</h5>
-                  <p>All the painful or time-consuming tasks in your development workflow such as compiling the SCSS or transpiring the JS are automated.</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div><!-- end of .container-->
       </section><!-- <section> close ============================-->
         <!-- <section> close ============================-->
+
       <!-- ============================================-->
       <!-- ============================================-->
       <!-- <section> begin ============================-->
@@ -213,8 +483,8 @@
           <div class="position-absolute btn-back-to-top bg-dark"><a class="text-600" href="#banner" data-bs-offset-top="0" data-scroll-to="#banner"><span class="fas fa-chevron-up" data-fa-transform="rotate-45"></span></a></div>
           <div class="row">
             <div class="col-lg-4">
-              <h5 class="text-uppercase text-white opacity-85 mb-3">Our Mission</h5>
-              <p class="text-600">Falcon enables front end developers to build custom streamlined user interfaces in a matter of hours, while it gives backend developers all the UI elements they need to develop their web app.And it's rich design can be easily integrated with backends whether your app is based on ruby on rails, laravel, express or any other server side system.</p>
+              <h5 class="text-uppercase text-white opacity-85 mb-3">Mon Mission</h5>
+              <p class="text-600">Selon mon expérience, on peut constaté que je peut réaliser des projets web ainsi que l'application mobile, mon mission c'est de réaliser votre projet digital que ce soit du web ou  mobile, je m'implique beaucoup dans mon travail.</p>
               <div class="icon-group mt-4"><a class="icon-item bg-white text-facebook" href="#!"><span class="fab fa-facebook-f"></span></a><a class="icon-item bg-white text-twitter" href="#!"><span class="fab fa-twitter"></span></a><a class="icon-item bg-white text-google-plus" href="#!"><span class="fab fa-google-plus-g"></span></a><a class="icon-item bg-white text-linkedin" href="#!"><span class="fab fa-linkedin-in"></span></a><a class="icon-item bg-white" href="#!"><span class="fab fa-medium-m"></span></a></div>
             </div>
             <div class="col ps-lg-6 ps-xl-8">
