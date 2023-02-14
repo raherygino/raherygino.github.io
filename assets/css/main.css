@@ -249,8 +249,28 @@
 
 .dVLQAC li:last-of-type { margin-bottom: 20px; }
 
-.dVLQAC li a { padding: 10px; }
+.dVLQAC li a { padding: 20px; }
+.dVLQAC li { margin-bottom: 10px; }
 
 .dVLQAC li a:hover, .dVLQAC li a:focus { transform: translateY(-3px); }
 
 .dVLQAC li a svg { width: 20px; height: 20px; }
+
+.kodfun-galeri {
+    display: flex;
+    height: 15rem;
+    gap: 1rem;
+}
+.kodfun-galeri > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+    cursor: pointer;
+}
+
+.kodfun-galeri > div:hover {
+    flex: 1.6;
+}
