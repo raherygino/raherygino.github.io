@@ -70,6 +70,10 @@
     margin-top: 1.25rem !important;
 }
 
+.mt-10 {
+    margin-top: 4rem !important;
+}
+
 .text-teal {
     color: var(--teal-100) !important;
 }
@@ -275,4 +279,20 @@
 
 .kodfun-galeri > div:hover {
     flex: 1.6;
+}
+
+.btn-fab {
+    border: solid 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--teal-100);
+    cursor: pointer;
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    transition: ease-in 0.2s;
+}
+.btn-fab:hover {
+    background-color: #00ff95;
 }
