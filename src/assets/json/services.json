@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Graphic Design",
+      "headline": "Modelisation de maquette graphique",
+      "description": "Confiez vos infographies à des experts. Tous vos flyers, catalogues, cartes de visite, vidéos publicitaires, ... à des experts",
+      "property": {
+          "textColor": "text-danger",
+          "position": "left"
+      }
+    },
+    {
+      "title": "Création",
+      "headline": "Création de votre site web",
+      "description": "Dans les conditions et le design que vous préférez, je peux concevoir votre site web de A à Z que ce soit E-commerce, Site vitrine, Blog,...",
+      "property": {
+          "textColor": "text-success",
+          "position": "right"
+      }
+    },
+    {
+      "title": "Développement",
+      "headline": "Développement d'application web",
+      "description": "Avec la technologie très avancé de notre époque, je peux développer votre d'application web",
+      "property": {
+          "textColor": "text-info",
+          "position": "left"
+      }
+    },
+    {
+      "title": "Conception",
+      "headline": "Conception d'application mobile",
+      "description": "Basant sur la technologie récente, je peut vous fournir le design et fonctionnalité rapide de votre application mobile dans le condition que vous souhaitez",
+      "property": {
+          "textColor": "text-primary",
+          "position": "right"
+      }
+    }
+]
