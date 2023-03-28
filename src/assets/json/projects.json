@@ -1,0 +1,74 @@
+[
+    {
+      "title": "Infographies",
+      "width": 100,
+      "width_col" : 3,
+      "type": "Vidéos, Logos, Flyers, ...",
+      "bg": "soft-success",
+      "link": "porfolio"
+    },
+    {
+      "title": "OnRushers",
+      "width": 100,
+      "width_col" : 3,
+      "type": "Application mobile",
+      "bg": "soft-info",
+      "link": ""
+    },
+    {
+      "title": "Gzerone",
+      "width": 100,
+      "width_col" : 3,
+      "type": "Application mobile",
+      "bg": "soft-warning",
+      "link": ""
+    },
+    {
+      "title": "TiKe",
+      "width": 100,
+      "width_col" : 3,
+      "type": "Application mobile",
+      "bg": "soft-danger",
+      "link": ""
+    },
+    {
+      "title": "Kapsul",
+      "width": 220,
+      "width_col" : 4,
+      "type": "Application mobile",
+      "bg": "soft-warning",
+      "link": ""
+    },
+    {
+      "title": "Chay",
+      "width": 80,
+      "width_col" : 4,
+      "type": "Site web & Application mobile",
+      "bg": "soft-info",
+      "link": ""
+    },
+    {
+      "title": "",
+      "width": 250,
+      "width_col" : 4,
+      "type": "Site web",
+      "bg": "secondary",
+      "link": ""
+    },
+    {
+      "title": "Bicotech",
+      "width": 160,
+      "width_col" : 6,
+      "type": "Application web",
+      "bg": "soft-danger",
+      "link": ""
+    },
+    {
+      "title": "Mandowe",
+      "width": 200,
+      "width_col" : 6,
+      "type": "Site e-commerce",
+      "bg": "soft-warning",
+      "link": ""
+    }
+]
