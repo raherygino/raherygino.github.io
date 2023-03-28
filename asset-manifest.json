@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9a65360c.css",
+    "main.js": "/static/js/main.863203aa.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/gino_picture.png": "/static/media/gino_picture.abfd4094ab0e73ca49a5.png",
+    "static/media/app_mobile.png": "/static/media/app_mobile.6ecae02cfbbd0d9ed84d.png",
+    "static/media/graphic_design.png": "/static/media/graphic_design.deccfebe271e71133125.png",
+    "static/media/gzerone.png": "/static/media/gzerone.c8775b53626e77b1a92b.png",
+    "static/media/ProductSansBold.ttf": "/static/media/ProductSansBold.53df38d5491afbeb42a5.ttf",
+    "static/media/website.png": "/static/media/website.a34abb189f5c64f268d7.png",
+    "static/media/Epyval.ttf": "/static/media/Epyval.b14ab3f6c0d5388c1dfe.ttf",
+    "static/media/ProductSansRegular.ttf": "/static/media/ProductSansRegular.d165384076551a756b3c.ttf",
+    "static/media/tike.png": "/static/media/tike.1b2e8d34ff17942d5bb2.png",
+    "static/media/bricotech.png": "/static/media/bricotech.07330219ee1742d6c1f1.png",
+    "static/media/onrushers.png": "/static/media/onrushers.b8f267e71e634a041cc6.png",
+    "static/media/app_web.png": "/static/media/app_web.0acc15a4a8d8320b3043.png",
+    "static/media/chay.png": "/static/media/chay.f245a54c814f540481da.png",
+    "static/media/mms.png": "/static/media/mms.7134bc4079297e5b4f6b.png",
+    "static/media/mandowe.png": "/static/media/mandowe.1a054e902ecf4fb779f8.png",
+    "index.html": "/index.html",
+    "main.9a65360c.css.map": "/static/css/main.9a65360c.css.map",
+    "main.863203aa.js.map": "/static/js/main.863203aa.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a65360c.css",
+    "static/js/main.863203aa.js"
+  ]
+}
