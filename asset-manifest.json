@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.9a65360c.css",
-    "main.js": "/static/js/main.e0db3c35.js",
+    "main.css": "/static/css/main.d79a258a.css",
+    "main.js": "/static/js/main.c056717c.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/georgino_picture.png": "/static/media/georgino_picture.901ed38c7cf8c9ef87da.png",
     "static/media/app_mobile.png": "/static/media/app_mobile.6ecae02cfbbd0d9ed84d.png",
+    "static/media/CV_Georginot_Updated_Jan_2023_infographiste.pdf": "/static/media/CV_Georginot_Updated_Jan_2023_infographiste.92514dcef5771dcfc5b9.pdf",
     "static/media/graphic_design.png": "/static/media/graphic_design.deccfebe271e71133125.png",
     "static/media/gzerone.png": "/static/media/gzerone.c8775b53626e77b1a92b.png",
     "static/media/ProductSansBold.ttf": "/static/media/ProductSansBold.53df38d5491afbeb42a5.ttf",
@@ -19,12 +20,12 @@
     "static/media/mms.png": "/static/media/mms.7134bc4079297e5b4f6b.png",
     "static/media/mandowe.png": "/static/media/mandowe.1a054e902ecf4fb779f8.png",
     "index.html": "/index.html",
-    "main.9a65360c.css.map": "/static/css/main.9a65360c.css.map",
-    "main.e0db3c35.js.map": "/static/js/main.e0db3c35.js.map",
+    "main.d79a258a.css.map": "/static/css/main.d79a258a.css.map",
+    "main.c056717c.js.map": "/static/js/main.c056717c.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a65360c.css",
-    "static/js/main.e0db3c35.js"
+    "static/css/main.d79a258a.css",
+    "static/js/main.c056717c.js"
   ]
 }
