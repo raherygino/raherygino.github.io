@@ -9,7 +9,7 @@ function Home() {
                     width="400"
                     className="mt-4"/>
 
-                <h3>Bonjour, Je suis Georginot
+                <h3>Bonjour, Je suis Georginot Armelin
                     <br/>Développeur Mobile / Développeur Logiciel / Web et Infographiste
                 </h3>
                 <p>Je suis un développeur et Infographiste,<br/>

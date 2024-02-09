@@ -23,7 +23,7 @@ const Contact = () => {
                         <Col 
                             lg={6}
                             md={6}>
-                            <p className="text-justify">N'hesite pas à me contacter si vous avez des projects, 
+                            <p className="text-justify">N'hesite pas à me contacter si vous avez des projets, 
                                 des questions et aussi des suggestions à me donner. 
                                 Je suis content de répondre votre demande. 
                                 Vous pouvez me contacter par: email, facebook, 

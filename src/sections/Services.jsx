@@ -15,7 +15,7 @@ const Services = () => {
                 <Card bg="dark">
                     <Card.Header>
                         <h3 className="text-center text-teal bold">Services</h3>
-                        <p className="text-center">Je vous propose des services basant sur la technologie de l’informatique.</p>
+                        <p className="text-center">Je vous propose des services basant sur la technologie de l'informatique.</p>
                     </Card.Header>
                     <Card.Body>
                         { allServices.map((service, index) => ( 
